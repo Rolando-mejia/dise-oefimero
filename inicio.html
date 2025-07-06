@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - La Ruta del Sabor</title>
+    <style>
+        /* Personalizar la barra de desplazamiento para navegadores basados en WebKit (Chrome, Edge, Safari) */
+        ::-webkit-scrollbar {
+            width: 8px; /* Ancho de la barra de desplazamiento */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #d2a679; /* Color del "pulgar" de la barra */
+            border-radius: 8px; /* Bordes redondeados */
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #8b4513; /* Color al pasar el mouse */
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #faf3e0; /* Color del fondo de la barra */
+        }
+
+        /* Para hacer el desplazamiento más lento */
+        html {
+            scroll-behavior: smooth; /* Desplazamiento suave */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #faf3e0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #8b4513;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .inicio {
+            text-align: center;
+            padding: 2rem;
+            background: #f4e3d7;
+        }
+
+        .inicio img {
+            max-width: 25%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            animation: zoomIn 1.5s ease-in-out; /* Animación añadida */
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .inicio h2 {
+            font-size: 2rem;
+            color: #8b4513;
+            margin-bottom: 1rem;
+        }
+
+        .inicio p {
+            font-size: 1.2rem;
+            color: #5a3d2b;
+            margin-bottom: 1.5rem;
+        }
+
+        .inicio a {
+            text-decoration: none;
+            background: #d2a679;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+            margin: 0.5rem;
+            display: inline-block;
+        }
+
+        .inicio a:hover {
+            background: #8b4513;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Sección de inicio -->
+    <section class="inicio">
+        <img src="img/bienvenida.png" alt="Bienvenidos a La Ruta del Sabor">
+        <h2>¡Bienvenido a La Ruta del Sabor!</h2>
+        <p>Disfruta de los mejores sabores en un ambiente acogedor. Explora nuestro menú y encuentra tu favorito.</p>
+        <!-- Botones para redirigir a otras secciones -->
+        <a href="menu.html">Ir al Menú</a>
+        <a href="location.html">Ver Ubicación</a>
+    </section>
+</body>
+
+</html>
